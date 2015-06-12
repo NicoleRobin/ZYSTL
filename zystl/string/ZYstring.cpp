@@ -1,11 +1,16 @@
 #include "ZYstring.h"
 
-
-CZYstring::CZYstring()
+namespace ZY
 {
-}
+	template <typename T>
+	CZYstring::CZYstring()
+	{
 
+	}
 
-CZYstring::~CZYstring()
-{
+	template <typename T>
+	CZYstring::~CZYstring()
+	{
+
+	}
 }

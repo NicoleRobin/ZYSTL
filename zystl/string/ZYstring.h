@@ -1,8 +1,14 @@
 #pragma once
-class CZYstring
+namespace ZY
 {
-public:
-	CZYstring();
-	~CZYstring();
-};
+	template <typename T>
+	class CZYstring
+	{
+	public:
+		CZYstring();
+		~CZYstring();
 
+	private:
+
+	};
+}

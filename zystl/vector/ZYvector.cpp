@@ -1,11 +1,14 @@
 #include "ZYvector.h"
 
-
-CZYvector::CZYvector()
+namespace ZY
 {
-}
+	template <typename T>
+	CZYvector::CZYvector()
+	{
+	}
 
-
-CZYvector::~CZYvector()
-{
+	template <typename T>
+	CZYvector::~CZYvector()
+	{
+	}
 }

@@ -1,8 +1,14 @@
 #pragma once
-class CZYvector
+namespace ZY
 {
-public:
-	CZYvector();
-	~CZYvector();
-};
+	template <typename T>
+	class CZYvector
+	{
+	public:
+		CZYvector();
+		~CZYvector();
 
+	private:
+
+	};
+}
