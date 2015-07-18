@@ -1,14 +1,21 @@
 #pragma once
+#include <iostream>
 namespace ZY
 {
-	template <typename T>
 	class CZYstring
 	{
 	public:
-		CZYstring();
+		CZYstring(const char *str = NULL);
+		CZYstring(const CZYstring &str); // copy constructor
 		~CZYstring();
 
-	private:
+	public:
+		// assign constructor
+		CZYstring& operator= (const CZYstring& str);
+		CZYstring& operator= (const char *s);
 
+		int length();
+	private:
+		
 	};
 }
