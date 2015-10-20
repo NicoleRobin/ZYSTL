@@ -1,14 +1,14 @@
-#include "ZYvector.h"
+#include "vector.h"
 
 namespace ZY
 {
 	template <typename T>
-	CZYvector::CZYvector()
+	vector::vector()
 	{
 	}
 
 	template <typename T>
-	CZYvector::~CZYvector()
+	vector::~vector()
 	{
 	}
 }

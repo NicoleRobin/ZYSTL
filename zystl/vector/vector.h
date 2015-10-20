@@ -2,11 +2,11 @@
 namespace ZY
 {
 	template <typename T>
-	class CZYvector
+	class vector
 	{
 	public:
-		CZYvector();
-		~CZYvector();
+		vector();
+		~vector();
 
 	private:
 
