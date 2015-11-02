@@ -78,10 +78,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ZYstring.h" />
+    <ClInclude Include="string.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ZYstring.cpp" />
+    <ClCompile Include="string.cpp" />
+    <ClCompile Include="testString.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

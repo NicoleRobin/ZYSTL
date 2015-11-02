@@ -15,6 +15,7 @@ namespace ZY
 
 		int length();
 	private:
-		
+		char *m_pStr;
+		int m_len;
 	};
 }

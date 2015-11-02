@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ZYstring.h">
+    <ClInclude Include="string.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ZYstring.cpp">
+    <ClCompile Include="string.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

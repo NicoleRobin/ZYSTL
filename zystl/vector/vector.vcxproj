@@ -11,10 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ZYvector.h" />
+    <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ZYvector.cpp" />
+    <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DDC9FDD8-9A51-4808-8A6A-4F45F40BC476}</ProjectGuid>
