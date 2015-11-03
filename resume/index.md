@@ -64,5 +64,18 @@
 
 ---
 
+# 技能清单
+
+以下均为我熟练使用的技能
+
+- 操作系统：Ubuntu、CentOS
+- 开发语言：C++、shell
+- 开发工具：g++、gdb、make
+- 数据库：Mysql、oracle
+- 库：STL、boost、OCCI、log4cplus、libevent
+- 版本控制工具：svn、git
+
+---
+
 # 致谢
 感谢您花时间阅读我的简历，期待能有机会和您共事。
