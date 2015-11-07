@@ -22,13 +22,13 @@
 
 ## 深圳市汉云科技有限公司 （ 2014年7月 ~ 至今 ）
 
+### SCSDBETL
+* 项目介绍：SCSDBETL是基于天云星数据库（SCSDB）的一款数据抽取工具，将不同数据源（oracle、mysql、SqlServer、SCSDB、文本文件等）的数据经过萃取（Extract）、转置（Transform）、加载（Load）到SCSDB数据库。
+* 职责划分：独立负责该工具的架构设计以及开发工作。
+
 ### SCSDBSYNC
 * 项目介绍：SCSDBSYNC是基于天云星数据库（SCSDB）的一款数据同步工具，用于将不同数据源（oracle、文本文件等）的数据以不同的增量抽取策略同步到SCSDB，使得数据源的更新能够实时同步到SCSDB。
 * 职责划分：负责读取模块的开发工作，读取模块的功能是从oracle或者csv文件中将数据读取出来，然后组装成SQL语句，放入到缓冲区队列中。然后写线程从队列中读取SQL语句并执行，实现将数据插入到SCSDB中。
-
-### SCSDBETL
-* 项目介绍：SCSDBETL是基于天云星数据库（SCSDB）的一款数据抽取工具，将不同数据源（oracle、mysql、SCSDB、文本文件等）的数据经过萃取（Extract）、转置（Transform）、加载（Load）到SCSDB数据库。
-* 职责划分：独立负责该工具的架构设计以及开发工作。
 
 ### SCSDBMAN
 * 项目介绍：scsdbman是天云星数据库的管理服务器，负责协调其他服务器的工作。
