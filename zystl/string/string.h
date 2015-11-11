@@ -1,4 +1,11 @@
 #pragma once
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+#include <iostream>
+
 namespace ZY
 {
 	class string
@@ -10,12 +17,18 @@ namespace ZY
 
 	public:
 		// assign constructor
-		string& operator= (const string& str);
-		string& operator= (const char *s);
+		string& operator=(const string& str);
 
-		int length();
+		// overload operator []
+		char operator[](int nIdx) const;
+
+		// overload IO
+		friend std::ostream& operator<<(std::ostream& out, const string &str);
+		friend std::istream& operator>>(std::istream& in, const string &str);
+
+		// return length of the string
+		int length() const;
 	private:
 		char *m_pStr;
-		int m_len;
 	};
 }
