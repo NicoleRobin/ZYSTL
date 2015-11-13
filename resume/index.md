@@ -22,21 +22,23 @@
 
 ## 深圳市汉云科技有限公司 （ 2014年7月 ~ 至今 ）
 
+### SCSDB
+* 项目介绍：天云星数据库是在linux系统下部署的一套分布式关系型数据库系统。实现海量、多样的结构化数据高效存储和快速查询、分析、挖掘。是为了GB、TB、PB级别的海量结构化数据存储和高速查询分析而设计，主要由管理服务器、数据存储服务器、索引服务器、数据库服务器和客户端组成，并采用多个数据节点，达到高效率、高速度的进行增、删、查、改等操作。
+* 职责划分：负责管理服务器、数据库服务器以及客户端的功能开发及维护工作。
+* 使用技术：opoll、线程池、单例模式、boost库、共享内存。
+* 开发工具：vim、g++、gdb、make
+
 ### SCSDBETL
 * 项目介绍：SCSDBETL是基于天云星数据库（SCSDB）的一款数据抽取工具，将不同数据源（oracle、mysql、SqlServer、SCSDB、文本文件等）的数据经过萃取（Extract）、转置（Transform）、加载（Load）到SCSDB数据库。
 * 职责划分：独立负责该工具的架构设计以及开发工作。
+* 使用技术：单例模式、工厂模式、多线程、OCCI库、boost库。
+* 开发工具：vim、g++、gdb、make
 
 ### SCSDBSYNC
 * 项目介绍：SCSDBSYNC是基于天云星数据库（SCSDB）的一款数据同步工具，用于将不同数据源（oracle、文本文件等）的数据以不同的增量抽取策略同步到SCSDB，使得数据源的更新能够实时同步到SCSDB。
 * 职责划分：负责读取模块的开发工作，读取模块的功能是从oracle或者csv文件中将数据读取出来，然后组装成SQL语句，放入到缓冲区队列中。然后写线程从队列中读取SQL语句并执行，实现将数据插入到SCSDB中。
-
-### SCSDBMAN
-* 项目介绍：scsdbman是天云星数据库的管理服务器，负责协调其他服务器的工作。
-* 职责划分：负责该项目的维护工作以及新功能的开发。
-
-### SCSDBSERVER
-* 项目介绍：SCSDBSERVER是天云星数据库的数据库服务器，用于接收用户连接并执行用户的SQL语句。
-* 职责划分：负责管理命令的维护工作，主要包括create、drop、grant、revoke、show、alter等命令。
+* 使用技术：多线程、模版模式、OCCI库、boost库。
+* 开发工具：vim、g++、gdb、make
 
 ### 其他项目
 * scsdbimpcsv项目：将csv格式的文本数据导入到天云星数据库中。  
@@ -59,9 +61,9 @@
 
 - 操作系统：Ubuntu、CentOS
 - 开发语言：C++、shell
-- 开发工具：g++、gdb、make
+- 开发工具：vim、g++、gdb、make
 - 数据库：Mysql、oracle
-- 库：STL、boost、OCCI、log4cplus、libevent
+- 库：STL、boost、OCCI、log4cplus、libevent、muduo
 - 版本控制工具：svn、git
 
 ---
