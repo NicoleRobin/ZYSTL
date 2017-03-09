@@ -16,7 +16,7 @@ namespace ZY
 		~string();
 
 	public:
-		// assign constructor
+		// assign operator
 		string& operator=(const string& str);
 
 		// overload operator []
